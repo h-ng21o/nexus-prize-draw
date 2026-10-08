@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nexus Prize Draw
 
-## Getting Started
+배재대학교 경영대학 축제의 경품 추첨 기능을 검증하기 위한 프로토타입입니다.
 
-First, run the development server:
+이 프로젝트는 공식 행사 시스템에 바로 연결하기 전에 경품 추첨의 핵심 동작을 개인 환경에서 검증하는 것을 목적으로 합니다.
+
+## 구현 기능
+
+- 체크인한 참가자만 추첨 후보로 선정
+- 경품 추첨 시작
+- 당첨자 표시
+- 이미 당첨된 참가자는 다음 추첨에서 제외
+- 추첨 이력 표시
+- 추첨 가능한 참가자가 없을 경우 추첨 버튼 비활성화
+- 테스트 참가자 데이터 사용
+
+## 테스트 데이터
+
+현재 프로토타입에서는 실제 학생 개인정보를 사용하지 않습니다.
+
+예시:
+
+- 참가자 01
+- 참가자 02
+- 참가자 03
+- 참가자 04
+- 참가자 05
+
+## 실행 방법
+
+의존성 설치:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+npm install
